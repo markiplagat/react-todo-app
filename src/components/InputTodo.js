@@ -14,7 +14,14 @@ class InputTodo extends React.Component {
 
   handleSubmit = e => {
     e.preventDefault();
-    this.props.addTodoItem(this.state.title);
+    if (this.state.title.trim()) {
+      this.props.addTodoItem(this.state.title);
+      this.setState({
+        title: "",
+      })
+    } else {
+      alert("Cannot Be blank")
+    }
   };
 
   render() {
