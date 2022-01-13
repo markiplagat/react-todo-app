@@ -4,7 +4,13 @@ class TodoItem extends React.Component {
   render() {
     return(
       <div>
-        <li key={this.props.todo.id}>{this.props.todo.title}</li>
+        <li>
+          <input
+            type="checkbox"
+            checked={this.props.todo.completed}
+            onChange={() => this.props.handleChange(this.props.todo.id)}
+          />{this.props.todo.title}
+        </li>
       </div>
     );
   }
