@@ -12,9 +12,14 @@ class InputTodo extends React.Component {
     });
   };
 
+  handleSubmit = e => {
+    e.preventDefault();
+    this.props.addTodoItem(this.state.title);
+  };
+
   render() {
     return (
-      <form>
+      <form onSubmit={this.handleSubmit}>
         <input
           type="text"
           placeholder="Add Todo.."
