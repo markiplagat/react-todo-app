@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "./TodoItem.module.css";
 
 class TodoItem extends React.Component {
 
@@ -12,8 +13,9 @@ class TodoItem extends React.Component {
   render() {
     return(
       <div>
-        <li>
+        <li className={styles.item}>
           <input
+            className={styles.checkbox}
             type="checkbox"
             checked={this.props.todo.completed}
             onChange={() => this.props.handleChange(this.props.todo.id)}

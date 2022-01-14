@@ -44,10 +44,6 @@ body {
   border-radius: calc(0.5 * 100px);
 }
 
-.input-text::placeholder {
-  color: #0000;
-}
-
 .input-submit {
   background: transparent;
   color: #5b5b5b;
@@ -57,6 +53,10 @@ body {
   margin-right: 10px;
 }
 
+.input-submit:hover {
+  background-color: green;
+  border-radius: 7px;
+}
 .input-text, .input-submit {
   height: 45px;
   outline: none;
