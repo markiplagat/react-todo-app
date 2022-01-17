@@ -26,3 +26,8 @@ button:hover {
     background-color: #d30505;
 }
 
+.textInput {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dfdfdf;
+}
