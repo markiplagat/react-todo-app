@@ -51,11 +51,11 @@ body {
   cursor: pointer;
   font-weight: 600;
   margin-right: 10px;
+  transition: 0.15s;
 }
 
 .input-submit:hover {
-  background-color: green;
-  border-radius: 7px;
+  transform: scale(1.72);
 }
 .input-text, .input-submit {
   height: 45px;

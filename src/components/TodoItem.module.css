@@ -22,7 +22,7 @@
     margin: -10px 0 0 10px;
 }
 
-button:hover {
+.item button:hover {
     background-color: #d30505;
 }
 
