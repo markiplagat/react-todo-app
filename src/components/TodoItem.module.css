@@ -20,10 +20,11 @@
     height:50px;
     width: 50px;
     margin: -10px 0 0 10px;
+    transition: 0.15s;
 }
 
 .item button:hover {
-    background-color: #d30505;
+    transform: scale(1.2);
 }
 
 .textInput {
