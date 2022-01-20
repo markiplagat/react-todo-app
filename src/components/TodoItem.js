@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import styles from "./TodoItem.module.css";
 
 const TodoItem = ({handleChange, deleteTodo, todo, setUpdate}) => {
@@ -13,6 +13,12 @@ const TodoItem = ({handleChange, deleteTodo, todo, setUpdate}) => {
   };
 
   const { completed, id, title } = todo;
+
+  useEffect(() =>{
+    return () => {
+      console.log("Cleaning up")
+    }
+  },[])
 
   const handleEditing = () => {
     setEditing(true);
