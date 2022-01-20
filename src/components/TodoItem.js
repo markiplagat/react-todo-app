@@ -54,7 +54,9 @@ const TodoItem = ({handleChange, deleteTodo, todo, setUpdate}) => {
           {title}
         </span>
           <button onClick={() => deleteTodo(id)}>
-            <FaTrash />
+            <FaTrash 
+              style={{ color: "orangered", fontSize: "16px"}}
+            />
           </button>
         </div>
         <input
