@@ -1,11 +1,19 @@
-import './App.css';
 import TodoContainer from "./components/TodoContainer";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import Navbar from "./components/Navbar";
+import About from "./pages/About";
+import NoMatch from "./pages/NoMatch";
 
 function App() {
   return (
-    <div>
-      <TodoContainer />
-    </div>
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route exact path="/" element={<TodoContainer />} />
+        <Route path="/about" element={<About /> } />
+        <Route path="*" element={<NoMatch />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
