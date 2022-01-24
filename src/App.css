@@ -57,8 +57,14 @@ body {
 .input-submit:hover {
   transform: scale(1.72);
 }
+
 .input-text, .input-submit {
   height: 45px;
   outline: none;
   border: none;
+}
+
+.active-link {
+  color: orangered;
+  text-decoration: underline;
 }
