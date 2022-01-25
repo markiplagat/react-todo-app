@@ -6,7 +6,7 @@ import NoMatch from "./pages/NoMatch";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Navbar />
       <Routes>
         <Route exact path="/" element={<TodoContainer />} />
