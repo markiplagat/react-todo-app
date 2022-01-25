@@ -76,7 +76,7 @@ body {
 
 .navBar button {
   position:fixed;
-  /*background: transparent;*/
+  background: transparent;
   border: none;
   left: 40px;
   top: 40px;
